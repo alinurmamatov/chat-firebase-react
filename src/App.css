@@ -1,3 +1,7 @@
+:root {
+  --primary-color: rgb(255, 168, 133);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,7 +12,7 @@ body {
 }
 
 .container {
-  background-color: rgb(255, 168, 133);
+  background-color: var(--primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,4 +79,108 @@ body {
 .gmailSign-btn:hover {
   cursor: pointer;
   background-color: white;
+}
+
+.loading {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30%;
+  text-align: center;
+}
+
+/* Dashboard */
+
+.dashboard-container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 20% auto;
+}
+
+.user-side {
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+
+
+.user-title {
+  text-align: center;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ol li {
+  background-color: floralwhite;
+  width: 90%;
+  height: 30px;
+  padding: 5px 0;
+  border-radius: 5px;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.main-container {
+  background-color: floralwhite;
+  display: grid;
+  grid-template-rows: auto 60px;
+}
+
+.messages {
+  width: 100%;
+  padding: 20px;
+}
+
+.send-messages {
+  background-color: lightgray;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.message-input {
+  flex-grow: 1;
+  border-radius: 5px;
+  border: none;
+  height: 90%;
+  padding: 0 10px;
+  font-size: 1rem;
+}
+
+.send-messages button {
+  height: 90%;
+  margin: 5px;
+  background-color: lightsalmon;
+  border: none;
+  border-radius: 5px;
+}
+
+.message {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* .message p {
+  margin: 0;
+  padding: 0;
+} */
+
+.message-user {
+  font-weight: bold;
+}
+
+.message-time {
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.message-text {
+  font-size: 15px;
+  margin-top: 15px;
 }

@@ -11,7 +11,8 @@ const firebaseConfig = {
   storageBucket: "chat-app-64ebb.appspot.com",
   messagingSenderId: "459172240354",
   appId: "1:459172240354:web:58ce02b46280073ad977bb",
-  measurementId: "G-MS0YS3ZEWB"
+  measurementId: "G-MS0YS3ZEWB",
+  databaseURL: "https://chat-app-64ebb-default-rtdb.europe-west1.firebasedatabase.app"
 };
 
 const app = initializeApp(firebaseConfig);
